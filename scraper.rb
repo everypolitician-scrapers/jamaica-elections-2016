@@ -18,6 +18,7 @@ warn "Found #{data[:constituencies].count} constituencies"
 
 data[:constituencies].each do |mem|
   ConstituencyPage.new(id: mem[:id]).to_h[:candidates].each do |c|
+    warn c
     ScraperWiki.save_sqlite(%i(name constituency party), c)
   end
 end
