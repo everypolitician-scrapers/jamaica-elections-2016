@@ -8,8 +8,8 @@ require 'scraperwiki'
 
 require_rel 'lib'
 
-# require 'open-uri/cached'
-require 'scraped_page_archive/open-uri'
+require 'open-uri/cached'
+# require 'scraped_page_archive/open-uri'
 
 LIST_PAGE = 'http://jamaica-elections.com/general/2016/info/constituency.php'
 
